@@ -1,7 +1,5 @@
 node ('slave') {
-  environment {
-        mvnHome = tool('M3')
-    }
+  def mvnHome = tool('M3')
   stage ('Checkout') {
     checkout scm
   }
