@@ -1,4 +1,4 @@
-node ('slave1') {
+node ('slave') {
   environment {
         mvnHome = tool('M3')
     }
