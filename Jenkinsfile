@@ -11,7 +11,7 @@ node ('slave') {
   }
   //Has a stage 'test' excuting 'mvn test'
   stage ('Test') {
-    sh '{env.mvnHome}/bin/mvn test'
+    sh '${mvnHome}/bin/mvn test'
   }
 
 }
