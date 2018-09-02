@@ -7,7 +7,7 @@ node ('slave') {
   }
   // Has a stage ‘build’ executing ‘mvn build’
   stage ('Build') {
-    sh '{env.mvnHome}/bin/mvn build'
+    sh '${mvnHome}/bin/mvn build'
   }
   //Has a stage 'test' excuting 'mvn test'
   stage ('Test') {
